@@ -5,6 +5,7 @@
     <title>Btn example</title>
     <style>
       * {
+        box-sizing: border-box;
         margin: 0;
         padding: 0;
         font-family: Helvetica, sans-serif;
@@ -14,10 +15,12 @@
       }
       .header {
         height: 55px;
-        background: #eeeeee;
+        width: 550px;
+        margin: 0 auto;
+        background: linear-gradient(#fff, #bbb);
+        border: solid 1px #888
       }
       .btn-bed {
-        box-sizing: border-box;
         background: #00c3f2;
         float: right;
         width: 120px;
@@ -45,7 +48,6 @@
         background: linear-gradient(to bottom, rgb(107, 223, 255) 0%,#009ec3 100%);
       }
       .embossed {
-        box-sizing: border-box;
         width: 80%;
         margin: 6px auto;
         height: 43px;
@@ -60,7 +62,6 @@
     </style>
   </head>
   <body>
-
     <div class="header">
       <a href="#" class="btn-bed">
         <div class="btn up-shadow">Join</div>
