@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name=viewport content="width=device-width, initial-scale=1">
     <title>Btn example</title>
+    <link href='https://fonts.googleapis.com/css?family=Coda' rel='stylesheet' type='text/css'>
     <style>
       * {
         box-sizing: border-box;
@@ -33,7 +34,7 @@
         font-weight: bold;
       }
       .grad {
-        background: linear-gradient(to bottom, rgb(107, 223, 255) 0%,#009ec3 100%);
+        background: linear-gradient(#6bdfff, #009ec3);
       }
       .embossed {
         width: 80%;
@@ -48,6 +49,15 @@
         text-shadow: 0 -1px 2px black, 1px 1px 3px white;
       }
 
+      .welcome {
+        float: left;
+        padding-left: 10px;
+        height: 100%;
+        background: linear-gradient(white, #eee);
+        font-family: 'Coda', monospace;
+        font-size: 40px;
+      }
+
       @media (max-width: 414px) {
         .header {
           width: 100%;
@@ -57,6 +67,7 @@
   </head>
   <body>
     <div class="header">
+      <div class="welcome">WELCOME</div>
       <a href="#" class="btn-bed">
         <div class="btn grad embossed">Join</div>
       </a>
