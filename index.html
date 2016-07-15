@@ -4,21 +4,22 @@
     <meta charset="utf-8">
     <meta name=viewport content="width=device-width, initial-scale=1">
     <title>Btn example</title>
-    <link href='https://fonts.googleapis.com/css?family=Coda' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Six+Caps' rel='stylesheet' type='text/css'>
     <style>
       * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-        font-family: Helvetica, sans-serif;
       }
       a {
         text-decoration: none;
       }
-      .header {
-        height: 55px;
+      .container {
         width: 414px;
         margin: 0 auto;
+      }
+      .header {
+        height: 55px;
         background: linear-gradient(#fff, #bbb);
         border: solid 1px #888
       }
@@ -28,21 +29,18 @@
         width: 120px;
         height: 100%;
       }
-      .btn {
+      .btn-embossed {
         color: white;
         text-align: center;
         font-weight: bold;
-      }
-      .grad {
-        background: linear-gradient(#6bdfff, #009ec3);
-      }
-      .embossed {
+        font-family: Helvetica, sans-serif;
         width: 80%;
         margin: 6px auto;
         height: 43px;
 
         border: solid 1px #666;
         border-radius: 10px;
+        background: linear-gradient(#6bdfff, #009ec3);
 
         padding: 7px;
         font-size: 24px;
@@ -51,26 +49,28 @@
 
       .welcome {
         float: left;
-        padding-left: 10px;
-        height: 100%;
-        background: linear-gradient(white, #eee);
-        font-family: 'Coda', monospace;
-        font-size: 40px;
+        margin-left: 20px;
+        font-family: 'Six Caps', sans-serif;
+        font-size: 55px;
+        line-height: 0.9;
+        letter-spacing: 4px;
       }
 
       @media (max-width: 414px) {
-        .header {
+        .container {
           width: 100%;
         }
       }
     </style>
   </head>
   <body>
-    <div class="header">
-      <div class="welcome">WELCOME</div>
-      <a href="#" class="btn-bed">
-        <div class="btn grad embossed">Join</div>
-      </a>
+    <div class="container">
+      <div class="header">
+        <div class="welcome">WELCOME</div>
+        <a href="#" class="btn-bed">
+          <div class="btn-embossed">Join</div>
+        </a>
+      </div>
     </div>
   </body>
 </html>
