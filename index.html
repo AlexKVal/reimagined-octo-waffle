@@ -124,25 +124,40 @@
       .initials-form {
         display: inline-block;
         flex-grow: 100;
-        margin-left: 15px;
-        padding: 0 20px;
         height: 130px;
-
+        margin-left: 15px;
         border: 1px solid black; /* debug */
       }
       @media (max-width: 414px) {
         .initials-form {
           height: 100px;
           margin-left: 10px;
-          padding: 0 10px;
         }
       }
+
       .initials-form > .header {
         float: left;
+        margin-left: 15px;
       }
       .initials-form > .optional {
         float: right;
         color: #aaa;
+        margin-right: 15px;
+      }
+      @media (max-width: 414px) {
+        .initials-form > .header {
+          margin-left: 10px;
+        }
+        .initials-form > .optional {
+          margin-right: 10px;
+        }
+      }
+
+      .initials-inputs {
+        display: inline-block;
+        flex-grow: 100;
+
+        background-color: aqua; /* debug */
       }
     </style>
   </head>
@@ -162,10 +177,10 @@
           </div>
           <div class="initials-form">
             <h3 class="header">Name</h3><span class="optional">(optional)</span>
-            <br>
-            <input type="text" placeholder="First">
-            <br>
-            <input type="text" placeholder="Last (Hidden)">
+            <div class="initials-inputs">
+              <input type="text" placeholder="First">
+              <input type="text" placeholder="Last (Hidden)">
+            </div>
           </div>
         </div>
       </div>
