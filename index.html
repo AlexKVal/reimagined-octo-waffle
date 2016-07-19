@@ -83,7 +83,7 @@
       }
       @media (max-width: 414px) {
         .main {
-          padding: 10px 5px;
+          padding: 10px 20px;
         }
         .main-header {
           font-size: 22px;
@@ -127,12 +127,11 @@
         height: 130px;
         margin-left: 15px;
         line-height: 0.7;
-        border: 1px solid black; /* debug */
       }
       @media (max-width: 414px) {
         .initials-form {
           height: 100px;
-          margin-left: 10px;
+          margin-left: 20px;
           font-size: 14px;
         }
       }
@@ -159,8 +158,6 @@
         display: inline-block;
         flex-grow: 100;
         margin-top: 6px;
-
-        background-color: aqua; /* debug */
       }
       .initials-inputs > input {
         width: 100%;
@@ -168,6 +165,12 @@
         font-size: 20px;
         line-height: 2.6;
         border: 2px solid #aaa;
+      }
+      @media (max-width: 414px) {
+        .initials-inputs > input {
+          font-size: 16px;
+          line-height: 2.4;
+        }
       }
       #firstname {
         border-top-left-radius: 15px;
@@ -185,9 +188,6 @@
       #lastname::-webkit-input-placeholder,
       #firstname::-webkit-input-placeholder {
         color: #ccc;
-      }
-      @media (max-width: 414px) {
-
       }
     </style>
   </head>
