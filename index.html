@@ -77,12 +77,15 @@
         text-shadow: 1px 2px 0 white;
         height: 300px;
       }
-      .main > .header {
+      .main-header {
         margin-bottom: 30px;
         font-size: 26px;
       }
       @media (max-width: 414px) {
-        .main > .header {
+        .main {
+          padding: 10px 5px;
+        }
+        .main-header {
           font-size: 22px;
         }
       }
@@ -122,17 +125,24 @@
         display: inline-block;
         flex-grow: 100;
         margin-left: 15px;
-        padding: 0 10px;
+        padding: 0 20px;
         height: 130px;
-        border: 1px solid black;
+
+        border: 1px solid black; /* debug */
       }
       @media (max-width: 414px) {
         .initials-form {
           height: 100px;
+          margin-left: 10px;
+          padding: 0 10px;
         }
       }
       .initials-form > .header {
         float: left;
+      }
+      .initials-form > .optional {
+        float: right;
+        color: #aaa;
       }
     </style>
   </head>
@@ -145,13 +155,13 @@
         </a>
       </div>
       <div class="main u-borders">
-        <h2 class="header">Join by filling out your profile</h2>
+        <h2 class="main-header">Join by filling out your profile</h2>
         <div class="photo-initials">
           <div class="photo-frame">
             <img class="photo" src="http://placehold.it/100x100" alt="photograph">
           </div>
           <div class="initials-form">
-            <h3 class="header">Name</h3><span>(optional)</span>
+            <h3 class="header">Name</h3><span class="optional">(optional)</span>
             <br>
             <input type="text" placeholder="First">
             <br>
